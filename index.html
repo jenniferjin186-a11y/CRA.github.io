@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rapid Prototyping & Pre-Compliance Engineering</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Compliance Engineering Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#0f1115;color:#eaeaea;line-height:1.6;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #222;}
+header h1{font-size:18px;font-weight:400;letter-spacing:1px;}
+nav a{color:#aaa;text-decoration:none;margin-left:30px;font-size:14px;}
+nav a:hover{color:#fff;}
+
+.hero{padding:140px 8% 120px 8%;max-width:1200px;}
+.hero h2{font-size:48px;font-weight:300;margin-bottom:20px;}
+.hero p{color:#aaa;font-size:20px;max-width:700px;margin-bottom:40px;}
+.btn{padding:14px 28px;border:1px solid #ff6b00;color:#ff6b00;text-decoration:none;margin-right:20px;font-size:14px;letter-spacing:1px;}
+.btn:hover{background:#ff6b00;color:#000;}
+
+.section{padding:120px 8%;max-width:1200px;margin:auto;}
+.section h3{font-size:32px;font-weight:300;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;}
+.card{border:1px solid #222;padding:30px;background:#14161b;}
+.card h4{margin-bottom:15px;font-weight:400;}
+.card p{color:#aaa;font-size:14px;}
+
+.cta{padding:120px 8%;text-align:center;border-top:1px solid #222;}
+.cta h3{font-size:36px;font-weight:300;margin-bottom:30px;}
+footer{text-align:center;padding:40px;color:#666;font-size:12px;border-top:1px solid #222;}
+</style>
 </head>
+
 <body>
+
 <header>
-  <div class="logo"><img src="images/logo.png" alt="Company Logo"></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="process.html">Process</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<h1>Engineering Advisory</h1>
+<nav>
+<a href="services.html">Services</a>
+<a href="process.html">Process</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<section class="banner">
-  <img src="images/banner.jpg" alt="Banner">
-  <div class="banner-text">
-    <h1>Rapid Prototyping & Pre-Compliance Engineering</h1>
-    <p>Reduce certification risks before tooling. Accelerate time-to-market.</p>
-    <a href="contact.html" class="btn">Request Engineering Review</a>
-    <a href="contact.html" class="btn">Get Prototype Quote</a>
-  </div>
+<section class="hero">
+<h2>Pre-Compliance Engineering & Risk Mitigation for Consumer Electronics</h2>
+<p>We help hardware brands reduce certification failures, tooling rework, and time-to-market risks before mass production.</p>
+<a href="contact.html" class="btn">REQUEST ENGINEERING REVIEW</a>
+<a href="contact.html" class="btn">GET PROTOTYPE QUOTE</a>
 </section>
 
-<section class="problem">
-  <h2>Why Products Fail Before Certification?</h2>
-  <div class="problem-item"><h3>EMC failure after tooling</h3></div>
-  <div class="problem-item"><h3>Safety clearance issues</h3></div>
-  <div class="problem-item"><h3>Battery protection non-compliance</h3></div>
-  <div class="problem-item"><h3>Structural waterproof failure</h3></div>
-  <div class="problem-item"><h3>Repeated mold modification</h3></div>
+<section class="section">
+<h3>Why Products Fail Before Certification</h3>
+<div class="grid">
+<div class="card">
+<h4>EMC Failure After Tooling</h4>
+<p>Layout and shielding issues discovered only after molds are finalized.</p>
+</div>
+<div class="card">
+<h4>Safety Clearance Risks</h4>
+<p>Structural design not aligned with IEC safety spacing requirements.</p>
+</div>
+<div class="card">
+<h4>Battery & Protection Non-Compliance</h4>
+<p>Protection circuit risks discovered during testing phase.</p>
+</div>
+<div class="card">
+<h4>Waterproof Structural Failure</h4>
+<p>IP rating claims unsupported by enclosure structure design.</p>
+</div>
+</div>
 </section>
 
-<section class="features">
-  <h2>What We Do</h2>
-  <div class="feature-item"><h3>Structural risk review</h3></div>
-  <div class="feature-item"><h3>Compliance pre-check</h3></div>
-  <div class="feature-item"><h3>Prototype build</h3></div>
-  <div class="feature-item"><h3>DFM & tooling consultation</h3></div>
+<section class="section">
+<h3>What We Provide</h3>
+<div class="grid">
+<div class="card">
+<h4>Structural Risk Review</h4>
+<p>Early stage enclosure and mechanical validation.</p>
+</div>
+<div class="card">
+<h4>Pre-Compliance Design Check</h4>
+<p>CE / UL / FCC oriented engineering screening.</p>
+</div>
+<div class="card">
+<h4>Rapid Prototyping</h4>
+<p>Functional prototypes for real-world validation.</p>
+</div>
+<div class="card">
+<h4>Tooling & DFM Advisory</h4>
+<p>Reduce mold modification cycles and production risks.</p>
+</div>
+</div>
 </section>
 
 <section class="cta">
-  <h2>Get Your Engineering Support Today</h2>
-  <a href="contact.html" class="btn">Contact Us</a>
+<h3>Engineering Confidence Before Mass Production</h3>
+<a href="contact.html" class="btn">START YOUR PROJECT</a>
 </section>
 
 <footer>
-  &copy; 2026 Your Company Name. All rights reserved.
+© 2026 Engineering Advisory. All Rights Reserved.
 </footer>
 
-<script src="js/script.js"></script>
 </body>
 </html>
