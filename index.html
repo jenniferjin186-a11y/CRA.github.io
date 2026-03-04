@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering Advisory | Pre-Compliance Consulting</title>
 
-<title>Engineering Advisory | Pre-Compliance Experts</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-font-family:'Inter',sans-serif;
-background:#f8f9fb;
+font-family:'Figtree',sans-serif;
+background:#f7f8fa;
 color:#111;
 line-height:1.7;
 }
@@ -24,13 +23,13 @@ justify-content:space-between;
 align-items:center;
 padding:25px 8%;
 background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,0.03);
+box-shadow:0 2px 15px rgba(0,0,0,0.04);
 }
 
 header h1{
-font-size:18px;
-font-weight:500;
+font-weight:600;
 letter-spacing:1px;
+font-size:18px;
 }
 
 nav a{
@@ -45,24 +44,27 @@ nav a:hover{
 color:#000;
 }
 
+/* HERO */
+
 .hero{
 padding:160px 8%;
-background:linear-gradient(135deg,#111827,#1f2937);
+background:linear-gradient(135deg,#0f172a,#1e293b);
 color:#fff;
 }
 
 .hero h2{
-font-family:'Playfair Display',serif;
-font-size:56px;
-font-weight:600;
-max-width:900px;
+font-size:60px;
+font-weight:700;
+text-transform:uppercase;
+max-width:950px;
 margin-bottom:30px;
 }
 
 .hero p{
 font-size:20px;
-color:#d1d5db;
-max-width:650px;
+font-weight:400;
+color:#cbd5e1;
+max-width:700px;
 margin-bottom:50px;
 }
 
@@ -81,6 +83,8 @@ transition:0.3s;
 background:#ff8533;
 }
 
+/* SECTION */
+
 .section{
 padding:140px 8%;
 max-width:1200px;
@@ -88,33 +92,42 @@ margin:auto;
 }
 
 .section h3{
-font-family:'Playfair Display',serif;
-font-size:40px;
+font-size:42px;
+font-weight:600;
 text-align:center;
-margin-bottom:80px;
+margin-bottom:25px;
 }
+
+.section-sub{
+text-align:center;
+color:#555;
+max-width:700px;
+margin:0 auto 80px auto;
+font-size:18px;
+}
+
+/* GRID */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:50px;
+gap:40px;
 }
+
+/* CARD */
 
 .card{
 background:#fff;
 padding:50px;
-border-radius:12px;
-box-shadow:0 20px 40px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 30px 60px rgba(0,0,0,0.08);
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,0.06);
+transition:all 0.35s ease;
+cursor:pointer;
 }
 
 .card h4{
 font-size:20px;
+font-weight:600;
 margin-bottom:20px;
 }
 
@@ -122,6 +135,41 @@ margin-bottom:20px;
 color:#555;
 font-size:15px;
 }
+
+/* Hover Effect */
+
+.card:hover{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+transform:translateY(-10px);
+}
+
+.card:hover h4,
+.card:hover p{
+color:#fff;
+}
+
+/* TRUST SECTION */
+
+.trust{
+background:#fff;
+padding:120px 8%;
+text-align:center;
+}
+
+.trust h3{
+font-size:38px;
+font-weight:600;
+margin-bottom:30px;
+}
+
+.trust p{
+max-width:800px;
+margin:auto;
+color:#555;
+font-size:18px;
+}
+
+/* CTA */
 
 .cta{
 padding:140px 8%;
@@ -131,8 +179,8 @@ text-align:center;
 }
 
 .cta h3{
-font-family:'Playfair Display',serif;
-font-size:42px;
+font-size:44px;
+font-weight:600;
 margin-bottom:40px;
 }
 
@@ -141,7 +189,7 @@ text-align:center;
 padding:50px;
 color:#888;
 font-size:13px;
-background:#fff;
+background:#f7f8fa;
 }
 </style>
 </head>
@@ -159,37 +207,51 @@ background:#fff;
 </header>
 
 <section class="hero">
-<h2>Engineering Risk Control Before Certification & Mass Production</h2>
-<p>We partner with hardware brands to eliminate compliance risks, reduce tooling rework, and accelerate time-to-market.</p>
+<h2>ENGINEERING RISK CONTROL BEFORE CERTIFICATION</h2>
+<p>Strategic pre-compliance consulting and rapid prototyping support for consumer electronics brands entering global markets.</p>
 <a href="contact.html" class="btn">Request Engineering Review</a>
 <a href="contact.html" class="btn">Get Prototype Quote</a>
 </section>
 
 <section class="section">
 <h3>Why Hardware Projects Fail</h3>
+<p class="section-sub">
+Certification delays, tooling rework, and structural compliance risks can destroy product timelines and budgets.
+We identify those risks before mass production.
+</p>
 
 <div class="grid">
+
 <div class="card">
 <h4>Late EMC Failures</h4>
-<p>Shielding and layout issues discovered after tooling investment.</p>
+<p>PCB layout and shielding problems discovered after tooling investment.</p>
 </div>
 
 <div class="card">
 <h4>Safety Clearance Risks</h4>
-<p>Mechanical structure not aligned with IEC requirements.</p>
+<p>Mechanical structures not aligned with IEC spacing requirements.</p>
 </div>
 
 <div class="card">
 <h4>Battery Protection Non-Compliance</h4>
-<p>Protection design issues found during certification testing.</p>
+<p>Protection circuit design flaws found during certification testing.</p>
 </div>
 
 <div class="card">
 <h4>IP Rating Structural Weakness</h4>
-<p>Waterproof claims unsupported by enclosure engineering.</p>
-</div>
+<p>Waterproof claims unsupported by enclosure engineering validation.</p>
 </div>
 
+</div>
+</section>
+
+<section class="trust">
+<h3>15+ Years in Consumer Electronics Engineering</h3>
+<p>
+Our cross-functional team integrates Industrial Design, Mechanical Engineering,
+and Electronics Development expertise. We bridge product design and certification,
+helping brands reduce risk before committing to tooling.
+</p>
 </section>
 
 <section class="cta">
