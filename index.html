@@ -9,28 +9,112 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body{background:#0f1115;color:#eaeaea;line-height:1.6;}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;border-bottom:1px solid #222;}
-header h1{font-size:18px;font-weight:400;letter-spacing:1px;}
-nav a{color:#aaa;text-decoration:none;margin-left:30px;font-size:14px;}
-nav a:hover{color:#fff;}
 
-.hero{padding:140px 8% 120px 8%;max-width:1200px;}
-.hero h2{font-size:48px;font-weight:300;margin-bottom:20px;}
-.hero p{color:#aaa;font-size:20px;max-width:700px;margin-bottom:40px;}
-.btn{padding:14px 28px;border:1px solid #ff6b00;color:#ff6b00;text-decoration:none;margin-right:20px;font-size:14px;letter-spacing:1px;}
-.btn:hover{background:#ff6b00;color:#000;}
+body{background:#ffffff;color:#111;line-height:1.6;}
 
-.section{padding:120px 8%;max-width:1200px;margin:auto;}
-.section h3{font-size:32px;font-weight:300;margin-bottom:40px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;}
-.card{border:1px solid #222;padding:30px;background:#14161b;}
-.card h4{margin-bottom:15px;font-weight:400;}
-.card p{color:#aaa;font-size:14px;}
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#ffffff;
+border-bottom:1px solid #eee;
+}
 
-.cta{padding:120px 8%;text-align:center;border-top:1px solid #222;}
-.cta h3{font-size:36px;font-weight:300;margin-bottom:30px;}
-footer{text-align:center;padding:40px;color:#666;font-size:12px;border-top:1px solid #222;}
+header h1{font-size:18px;font-weight:500;}
+nav a{color:#555;text-decoration:none;margin-left:30px;font-size:14px;}
+nav a:hover{color:#000;}
+
+.hero{
+background:#0f1115;
+color:#fff;
+padding:140px 8% 120px 8%;
+}
+
+.hero h2{
+font-size:48px;
+font-weight:300;
+margin-bottom:20px;
+max-width:900px;
+}
+
+.hero p{
+color:#aaa;
+font-size:20px;
+max-width:700px;
+margin-bottom:40px;
+}
+
+.btn{
+padding:14px 28px;
+border:1px solid #ff6b00;
+color:#ff6b00;
+text-decoration:none;
+margin-right:20px;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.btn:hover{
+background:#ff6b00;
+color:#000;
+}
+
+.section{
+padding:120px 8%;
+max-width:1200px;
+margin:auto;
+}
+
+.section h3{
+font-size:32px;
+font-weight:300;
+margin-bottom:60px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.card{
+border:1px solid #eee;
+padding:40px;
+background:#fafafa;
+}
+
+.card h4{
+margin-bottom:15px;
+font-weight:500;
+}
+
+.card p{
+color:#555;
+font-size:14px;
+}
+
+.cta{
+background:#0f1115;
+color:#fff;
+padding:120px 8%;
+text-align:center;
+}
+
+.cta h3{
+font-size:36px;
+font-weight:300;
+margin-bottom:30px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+font-size:12px;
+border-top:1px solid #eee;
+}
 </style>
 </head>
 
@@ -62,37 +146,15 @@ footer{text-align:center;padding:40px;color:#666;font-size:12px;border-top:1px s
 </div>
 <div class="card">
 <h4>Safety Clearance Risks</h4>
-<p>Structural design not aligned with IEC safety spacing requirements.</p>
+<p>Structural design not aligned with IEC spacing requirements.</p>
 </div>
 <div class="card">
-<h4>Battery & Protection Non-Compliance</h4>
-<p>Protection circuit risks discovered during testing phase.</p>
+<h4>Battery Non-Compliance</h4>
+<p>Protection circuit risks discovered during testing.</p>
 </div>
 <div class="card">
 <h4>Waterproof Structural Failure</h4>
-<p>IP rating claims unsupported by enclosure structure design.</p>
-</div>
-</div>
-</section>
-
-<section class="section">
-<h3>What We Provide</h3>
-<div class="grid">
-<div class="card">
-<h4>Structural Risk Review</h4>
-<p>Early stage enclosure and mechanical validation.</p>
-</div>
-<div class="card">
-<h4>Pre-Compliance Design Check</h4>
-<p>CE / UL / FCC oriented engineering screening.</p>
-</div>
-<div class="card">
-<h4>Rapid Prototyping</h4>
-<p>Functional prototypes for real-world validation.</p>
-</div>
-<div class="card">
-<h4>Tooling & DFM Advisory</h4>
-<p>Reduce mold modification cycles and production risks.</p>
+<p>IP rating unsupported by enclosure design.</p>
 </div>
 </div>
 </section>
