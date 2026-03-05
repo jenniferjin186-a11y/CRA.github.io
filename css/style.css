@@ -49,13 +49,55 @@ nav a:hover{color:#000;}
 .stat p{color:#555;margin-top:10px;}
 
 /* ---------------------------- */
-/*          INDUSTRIES          */
-/* ---------------------------- */
-.industries{background:#eef1f5;padding:120px 8%;text-align:center;}
-.industry-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-top:60px;}
-.industry{display:flex;flex-direction:column;align-items:center;gap:15px;font-weight:500;color:#333;}
-.industry svg{width:40px;height:40px;}
+/* INDUSTRIES 模块整体 */
+.industries {
+  background: #eef1f5;
+  padding: 120px 8%;
+  text-align: center;
+}
 
+/* 标题更大、更醒目 */
+.industries h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+/* 网格排列 */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* 每个行业块 */
+.industry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.industry i {
+  font-size: 40px;
+  color: #0f172a;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.industry:hover i {
+  color: #ff6b00;
+  transform: scale(1.2);
+}
+
+.industry p {
+  margin-top: 8px;
+  font-size: 16px;
+}
 /* ---------------------------- */
 /*          CTA                 */
 /* ---------------------------- */
