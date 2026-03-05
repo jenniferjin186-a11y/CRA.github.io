@@ -8,7 +8,7 @@ nav a{margin-left:30px;text-decoration:none;color:#555;font-size:14px;}
 .hero p{max-width:650px;font-size:18px;margin-bottom:40px;color:#cbd5e1;}
 .hero-buttons .btn{background:#ff6b00;color:#fff;margin-right:20px;}
 .btn{padding:14px 32px;border-radius:50px;text-decoration:none;font-size:14px;transition:0.3s;}
-.btn:hover{opacity:0.85;}
+.btn.primary:hover{opacity:0.85;}
 .stats{display:flex;justify-content:center;gap:120px;padding:100px 8%;background:#fff;text-align:center;}
 .stat h2{font-size:48px;font-weight:700;}
 .section{padding:120px 8%;max-width:1200px;margin:auto;}
@@ -22,8 +22,10 @@ nav a{margin-left:30px;text-decoration:none;color:#555;font-size:14px;}
   border-radius:16px;
   box-shadow:0 12px 30px rgba(0,0,0,0.08);
   transition:0.3s, transform 0.3s;
+  color:#111;
 }
-.card:hover, .solution-card:hover, .process-card:hover, .about-card:hover{transform:translateY(-8px);background:#0f172a;color:#fff;}
+.card:hover, .solution-card:hover, .process-card:hover{transform:translateY(-8px);background:#0f172a;color:#fff;}
+.about-card:hover{transform:translateY(-5px);background:#e6f0fa;color:#111;} /* hover文字保持黑色 */
 .solution-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;}
 .solution-card h3{margin-bottom:20px;}
 .solution-card ul{padding-left:20px;}
@@ -31,8 +33,6 @@ nav a{margin-left:30px;text-decoration:none;color:#555;font-size:14px;}
 .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center;margin-top:40px;}
 .process-card{border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.06);}
 .about-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;}
-.about-card{padding:40px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.06);}
-.about-card:hover{background:#f0f4f8;transform:translateY(-5px);}
 .industries{padding:120px 8%;}
 .industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;text-align:center;}
 .industry i{font-size:40px;margin-bottom:20px;color:#0f172a;transition:0.3s;}
@@ -40,6 +40,7 @@ nav a{margin-left:30px;text-decoration:none;color:#555;font-size:14px;}
 .cta{padding:140px 8%;text-align:center;background:#111827;color:#fff;}
 .cta h2{font-size:40px;margin-bottom:20px;}
 .cta p{margin-bottom:40px;}
+.cta .btn.primary{background:#ff6b00;color:#fff;}
 footer{background:#0f172a;color:#cbd5e1;padding:80px 8%;}
 .footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-bottom:40px;}
 .footer-grid h3{font-size:16px;margin-bottom:15px;}
