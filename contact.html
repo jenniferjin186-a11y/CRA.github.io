@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Engineering Inquiry</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Contact Engineering Team</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<header>
-  <div class="logo"><img src="images/logo.png" alt="Company Logo"></div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="process.html">Process</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<header class="navbar">
+<div class="container nav-inner">
+
+<div class="logo">Engineering Consulting</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="index.html#process">Process</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
 </header>
 
-<section>
-  <h2>Request Engineering Review</h2>
+<section class="section contact-section">
 
-  <form>
-    <input type="text" placeholder="Name" required>
-    <input type="text" placeholder="Company" required>
-    <input type="text" placeholder="Country">
-    <input type="text" placeholder="Product Type">
-    <input type="text" placeholder="Target Certification (CE / UL / FCC)">
-    <textarea placeholder="Project Details"></textarea>
-    <button type="submit">Submit Inquiry</button>
-  </form>
+<div class="container">
+
+<h1>Start Technical Review</h1>
+
+<p>
+Send us your product information and we will review the engineering risks.
+</p>
+
+<form id="contact-form">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<input type="text" name="company" placeholder="Company">
+
+<input type="email" name="email" placeholder="Email" required>
+
+<select name="certification">
+
+<option>Certification Target</option>
+<option>CE</option>
+<option>FCC</option>
+<option>UL</option>
+
+</select>
+
+<textarea name="message" placeholder="Describe your product"></textarea>
+
+<button class="btn-primary">Submit Review</button>
+
+</form>
+
+</div>
 
 </section>
 
-<footer>
-  &copy; 2026 Your Company Name. All rights reserved.
-</footer>
+<script src="js/script.js"></script>
 
 </body>
 </html>
