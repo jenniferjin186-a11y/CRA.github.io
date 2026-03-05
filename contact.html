@@ -6,73 +6,180 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Contact Engineering Team | Rapid Prototyping Consulting</title>
+<title>Contact Engineering Team</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/YOURKIT.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6c0c9c0c9c.js" crossorigin="anonymous"></script>
+
+<style>
+
+.contact-hero{
+padding:120px 0 80px;
+background:#f7f8fa;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.contact-left h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.contact-left p{
+font-size:18px;
+color:#555;
+margin-bottom:30px;
+}
+
+.contact-features{
+list-style:none;
+padding:0;
+}
+
+.contact-features li{
+margin-bottom:14px;
+font-size:16px;
+}
+
+.contact-features i{
+color:#ff6a00;
+margin-right:10px;
+}
+
+.contact-card{
+background:#fff;
+padding:40px;
+border-radius:12px;
+box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+width:100%;
+padding:14px 16px;
+border:1px solid #e4e6eb;
+border-radius:8px;
+font-size:15px;
+font-family:Figtree;
+}
+
+.form-group textarea{
+min-height:120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+outline:none;
+border-color:#ff6a00;
+}
+
+.submit-btn{
+width:100%;
+background:#ff6a00;
+color:#fff;
+border:none;
+padding:16px;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.submit-btn:hover{
+background:#e55d00;
+}
+
+.success-message{
+display:none;
+margin-top:20px;
+color:#0a7a34;
+font-weight:600;
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header class="navbar">
-<div class="container nav-inner">
 
-<div class="logo">Engineering Consulting</div>
+<section class="contact-hero">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="index.html#services">Services</a>
-<a href="index.html#process">Process</a>
-<a href="contact.html">Contact</a>
-</nav>
+<div class="container contact-grid">
 
-</div>
-</header>
+<div class="contact-left">
 
-
-<section class="section contact-section">
-
-<div class="container contact-container">
-
-<div class="contact-intro">
-
-<h1>Start Technical Review</h1>
+<h1>Start Your Engineering Review</h1>
 
 <p>
-Send us your product information.  
-Our engineering team will review structural risks, compliance issues, and prototyping feasibility.
+Send us your product details and our engineering team will evaluate potential risks before prototyping or certification.
 </p>
 
-<ul class="contact-benefits">
+<ul class="contact-features">
 
 <li><i class="fa-solid fa-check"></i> Rapid prototyping consultation</li>
 
-<li><i class="fa-solid fa-check"></i> Pre-compliance engineering review</li>
+<li><i class="fa-solid fa-check"></i> Structural design risk review</li>
 
-<li><i class="fa-solid fa-check"></i> Certification risk identification</li>
+<li><i class="fa-solid fa-check"></i> Pre-compliance engineering check</li>
 
-<li><i class="fa-solid fa-check"></i> Manufacturing feasibility evaluation</li>
+<li><i class="fa-solid fa-check"></i> Certification coordination support</li>
 
 </ul>
 
 </div>
 
 
-<div class="contact-form-card">
+<div class="contact-card">
 
 <form id="contact-form">
 
+<div class="form-group">
+
 <input type="text" name="name" placeholder="Your Name" required>
 
-<input type="text" name="company" placeholder="Company Name">
+</div>
+
+<div class="form-group">
+
+<input type="text" name="company" placeholder="Company">
+
+</div>
+
+<div class="form-group">
 
 <input type="email" name="email" placeholder="Email Address" required>
 
+</div>
+
+<div class="form-group">
+
 <input type="text" name="country" placeholder="Country">
+
+</div>
+
+<div class="form-group">
 
 <select name="certification">
 
@@ -80,23 +187,28 @@ Our engineering team will review structural risks, compliance issues, and protot
 <option>CE</option>
 <option>FCC</option>
 <option>UL</option>
-<option>Other</option>
 
 </select>
 
-<textarea name="message" placeholder="Describe your product project"></textarea>
+</div>
 
-<button class="btn-primary" type="submit">
+<div class="form-group">
 
-Submit Technical Review
+<textarea name="message" placeholder="Tell us about your product"></textarea>
+
+</div>
+
+<button class="submit-btn" type="submit">
+
+Submit Engineering Request
 
 </button>
 
 </form>
 
-<div id="form-success">
+<div class="success-message" id="success-message">
 
-Thank you. Our engineers will review your request within 24 hours.
+✔ Request received. Our engineers will contact you within 24 hours.
 
 </div>
 
@@ -109,32 +221,34 @@ Thank you. Our engineers will review your request within 24 hours.
 
 <script>
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbzStFTEw1yF9iEijo1COLWXzjqsgN_2ZcuYzsDmjxNUn4jn31gv_E5VoYrgunPiCdo_5w/exec"
+const scriptURL="https://script.google.com/macros/s/AKfycbzStFTEw1yF9iEijo1COLWXzjqsgN_2ZcuYzsDmjxNUn4jn31gv_E5VoYrgunPiCdo_5w/exec"
 
-const form = document.getElementById("contact-form")
-const success = document.getElementById("form-success")
+const form=document.getElementById("contact-form")
 
-form.addEventListener("submit", e => {
+const success=document.getElementById("success-message")
+
+form.addEventListener("submit",e=>{
 
 e.preventDefault()
 
-fetch(scriptURL, {
-method: "POST",
-body: new FormData(form)
+fetch(scriptURL,{
+method:"POST",
+body:new FormData(form)
 })
-.then(response => {
 
-form.style.display = "none"
-success.style.display = "block"
+.then(res=>{
+
+form.reset()
+
+success.style.display="block"
 
 })
-.catch(error => console.error("Error!", error.message))
+
+.catch(err=>alert("Submission failed"))
 
 })
 
 </script>
-
-<script src="js/script.js"></script>
 
 </body>
 
