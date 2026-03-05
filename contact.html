@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
-<title>Contact Engineering Team</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact Engineering Team | Rapid Prototyping Consulting</title>
 
 <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/YOURKIT.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -29,44 +33,109 @@
 </div>
 </header>
 
+
 <section class="section contact-section">
 
-<div class="container">
+<div class="container contact-container">
+
+<div class="contact-intro">
 
 <h1>Start Technical Review</h1>
 
 <p>
-Send us your product information and we will review the engineering risks.
+Send us your product information.  
+Our engineering team will review structural risks, compliance issues, and prototyping feasibility.
 </p>
+
+<ul class="contact-benefits">
+
+<li><i class="fa-solid fa-check"></i> Rapid prototyping consultation</li>
+
+<li><i class="fa-solid fa-check"></i> Pre-compliance engineering review</li>
+
+<li><i class="fa-solid fa-check"></i> Certification risk identification</li>
+
+<li><i class="fa-solid fa-check"></i> Manufacturing feasibility evaluation</li>
+
+</ul>
+
+</div>
+
+
+<div class="contact-form-card">
 
 <form id="contact-form">
 
-<input type="text" name="name" placeholder="Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="text" name="company" placeholder="Company">
+<input type="text" name="company" placeholder="Company Name">
 
-<input type="email" name="email" placeholder="Email" required>
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="country" placeholder="Country">
 
 <select name="certification">
 
-<option>Certification Target</option>
+<option value="">Certification Target</option>
 <option>CE</option>
 <option>FCC</option>
 <option>UL</option>
+<option>Other</option>
 
 </select>
 
-<textarea name="message" placeholder="Describe your product"></textarea>
+<textarea name="message" placeholder="Describe your product project"></textarea>
 
-<button class="btn-primary">Submit Review</button>
+<button class="btn-primary" type="submit">
+
+Submit Technical Review
+
+</button>
 
 </form>
+
+<div id="form-success">
+
+Thank you. Our engineers will review your request within 24 hours.
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
+
+<script>
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzStFTEw1yF9iEijo1COLWXzjqsgN_2ZcuYzsDmjxNUn4jn31gv_E5VoYrgunPiCdo_5w/exec"
+
+const form = document.getElementById("contact-form")
+const success = document.getElementById("form-success")
+
+form.addEventListener("submit", e => {
+
+e.preventDefault()
+
+fetch(scriptURL, {
+method: "POST",
+body: new FormData(form)
+})
+.then(response => {
+
+form.style.display = "none"
+success.style.display = "block"
+
+})
+.catch(error => console.error("Error!", error.message))
+
+})
+
+</script>
+
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
