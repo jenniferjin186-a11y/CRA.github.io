@@ -47,3 +47,67 @@ footer{background:#0f172a;color:#cbd5e1;padding:80px 8%;}
 .footer-grid ul{list-style:none;}
 .footer-grid li{margin-bottom:10px;}
 .footer-bottom{text-align:center;font-size:13px;color:#888;}
+/* services */
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+margin-top:60px;
+}
+
+.service-card{
+background:#fff;
+padding:40px;
+border-radius:16px;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+}
+
+.service-card ul{
+margin-top:20px;
+padding-left:18px;
+}
+
+.service-card li{
+margin-bottom:10px;
+}
+
+
+/* timeline */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:30px;
+text-align:center;
+margin-top:60px;
+}
+
+.timeline-number{
+font-size:28px;
+font-weight:700;
+color:#ff6b00;
+margin-bottom:10px;
+}
+
+
+/* case study */
+
+.case-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+margin-top:60px;
+}
+
+.case-card{
+background:#fff;
+padding:40px;
+border-radius:16px;
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
