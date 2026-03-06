@@ -254,3 +254,36 @@ background:#f5f7fa;
 .dropdown:hover .dropdown-menu{
 display:block;
 }
+/* SERVICES DROPDOWN */
+
+.dropdown{
+position:relative;
+}
+
+.dropdown-menu{
+position:absolute;
+top:28px;
+left:0;
+background:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+border-radius:8px;
+padding:10px 0;
+display:none;
+min-width:200px;
+z-index:99;
+}
+
+.dropdown-menu a{
+display:block;
+padding:10px 20px;
+font-size:14px;
+color:#333;
+}
+
+.dropdown-menu a:hover{
+background:#f5f7fa;
+}
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
