@@ -206,3 +206,37 @@ font-weight:600;
 margin-top:15px;
 color:#ff6b00;
 }
+/* dropdown menu */
+
+.dropdown{
+position:relative;
+display:inline-block;
+}
+
+.dropdown-menu{
+position:absolute;
+top:30px;
+left:0;
+background:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+border-radius:8px;
+padding:10px 0;
+display:none;
+min-width:200px;
+}
+
+.dropdown-menu a{
+display:block;
+padding:10px 20px;
+color:#333;
+font-size:14px;
+text-decoration:none;
+}
+
+.dropdown-menu a:hover{
+background:#f5f7fa;
+}
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
