@@ -338,3 +338,14 @@ margin:40px auto 0;
 .three-card-row .solution-card{
 text-align:center;
 }
+.three-card-row{
+display:flex;
+gap:40px;
+max-width:1200px;
+margin:40px auto;
+}
+
+.three-card-row .solution-card{
+flex:1;
+text-align:center;
+}
