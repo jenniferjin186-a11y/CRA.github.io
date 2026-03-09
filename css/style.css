@@ -327,3 +327,14 @@ background:#f7f7f7;
 padding:30px;
 border-radius:10px;
 }
+.three-card-row{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+max-width:1200px;
+margin:40px auto 0;
+}
+
+.three-card-row .solution-card{
+text-align:center;
+}
