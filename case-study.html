@@ -5,11 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engineering Case Study | Hardware Development</title>
+<title>Engineering Case Studies | Prototype Compliance Projects</title>
 
-<meta name="description" content="Engineering case studies for hardware prototype development and design optimization.">
+<meta name="description" content="Engineering consulting case studies showing how prototype compliance issues were solved before certification testing.">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -25,12 +26,10 @@
 
 <div class="dropdown">
 <a href="#">Services</a>
-
 <div class="dropdown-menu">
 <a href="rapid-prototyping.html">Rapid Prototyping</a>
 <a href="engineering-consulting.html">Engineering Consulting</a>
 </div>
-
 </div>
 
 <a href="industries.html">Industries</a>
@@ -42,55 +41,81 @@
 
 </header>
 
+
 <section class="hero">
+
+<div class="hero-left">
 
 <h1>Engineering Case Studies</h1>
 
-<p>Real engineering solutions for hardware product development.</p>
+<p>Real engineering challenges solved during prototype development and certification preparation.</p>
 
-</section>
-
-<section class="container">
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3>Security Camera Prototype Development</h3>
-
-<p><strong>Problem</strong><br>
-Waterproof failure risk in camera enclosure.</p>
-
-<p><strong>Solution</strong><br>
-Structural redesign and sealing optimization.</p>
-
-<p><strong>Result</strong><br>
-Passed IP66 testing and reduced tooling iteration.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Smart Home Device Thermal Optimization</h3>
-
-<p><strong>Problem</strong><br>
-Heat accumulation in compact enclosure.</p>
-
-<p><strong>Solution</strong><br>
-Internal layout redesign and thermal path optimization.</p>
-
-<p><strong>Result</strong><br>
-Temperature reduced by 18% during operation.</p>
-
+<div class="hero-buttons">
+<a href="contact.html" class="btn primary">Start Your Project</a>
 </div>
 
 </div>
 
 </section>
 
-<footer>
-<p>© Engineering Studio</p>
-</footer>
+
+<section class="section">
+
+<h2 class="section-title">Prototype Engineering Cases</h2>
+
+<div class="solution-grid">
+
+<div class="solution-card">
+<i class="fas fa-video fa-2x"></i>
+<h3>Smart Security Camera</h3>
+<p>Prototype failed IP sealing evaluation. Engineers redesigned sealing structure and improved enclosure reliability before certification testing.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-house-signal fa-2x"></i>
+<h3>Smart Home Gateway</h3>
+<p>EMC compliance risk identified in prototype stage. PCB layout and shielding improvements reduced interference before certification.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-lightbulb fa-2x"></i>
+<h3>Outdoor Smart Lighting</h3>
+<p>Thermal accumulation detected during prototype evaluation. Heat dissipation structure optimized for stable performance.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-microchip fa-2x"></i>
+<h3>IoT Monitoring Device</h3>
+<p>Electrical safety risks discovered in early prototype design and resolved before certification submission.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>Need Engineering Help With Your Prototype?</h2>
+
+<p>Our engineers help solve compliance risks before certification testing.</p>
+
+<a href="contact.html" class="btn primary">Contact Engineering Team</a>
+
+</section>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
