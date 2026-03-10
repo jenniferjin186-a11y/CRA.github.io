@@ -5,11 +5,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engineering Process | Hardware Product Development</title>
+<title>Engineering Consulting Process | Prototype Compliance Workflow</title>
 
-<meta name="description" content="Engineering workflow from NDA, CAD review, risk analysis to prototype development and certification support.">
+<meta name="description" content="Our engineering consulting workflow helps hardware companies evaluate prototype compliance risks and prepare products for certification testing.">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -25,12 +26,10 @@
 
 <div class="dropdown">
 <a href="#">Services</a>
-
 <div class="dropdown-menu">
 <a href="rapid-prototyping.html">Rapid Prototyping</a>
 <a href="engineering-consulting.html">Engineering Consulting</a>
 </div>
-
 </div>
 
 <a href="industries.html">Industries</a>
@@ -42,50 +41,116 @@
 
 </header>
 
+
 <section class="hero">
 
-<h1>Engineering Process</h1>
+<div class="hero-left">
 
-<p>A structured workflow for engineering risk control.</p>
+<h1>Our Engineering Consulting Process</h1>
 
-</section>
+<p>A structured workflow to evaluate prototype engineering risks and prepare hardware products for certification testing.</p>
 
-<section class="container">
-
-<div class="process-grid">
-
-<div class="process-step">
-<h3>01</h3>
-<p>NDA</p>
-</div>
-
-<div class="process-step">
-<h3>02</h3>
-<p>CAD Review</p>
-</div>
-
-<div class="process-step">
-<h3>03</h3>
-<p>Engineering Risk Report</p>
-</div>
-
-<div class="process-step">
-<h3>04</h3>
-<p>Prototype Development</p>
-</div>
-
-<div class="process-step">
-<h3>05</h3>
-<p>Certification Support</p>
+<div class="hero-buttons">
+<a href="contact.html" class="btn primary">Start Your Project</a>
 </div>
 
 </div>
 
 </section>
 
-<footer>
-<p>© Engineering Studio</p>
-</footer>
+
+<section class="section">
+
+<h2 class="section-title">Prototype Engineering Workflow</h2>
+
+<div class="solution-grid">
+
+<div class="solution-card">
+<i class="fas fa-file-contract fa-2x"></i>
+<h3>NDA & Project Review</h3>
+<p>Understand product design, application scenarios and certification requirements.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-cube fa-2x"></i>
+<h3>Prototype Evaluation</h3>
+<p>Analyze mechanical structure, internal layout and prototype design quality.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-triangle-exclamation fa-2x"></i>
+<h3>Compliance Risk Assessment</h3>
+<p>Identify potential issues related to CE compliance, EMC, safety and thermal performance.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-screwdriver-wrench fa-2x"></i>
+<h3>Engineering Optimization</h3>
+<p>Provide structural and design modification suggestions to mitigate risks.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section gray-bg">
+
+<h2 class="section-title">Certification Preparation</h2>
+
+<div class="solution-grid">
+
+<div class="solution-card">
+<i class="fas fa-certificate fa-2x"></i>
+<h3>Compliance Guidance</h3>
+<p>Review engineering factors affecting CE certification results.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-comments fa-2x"></i>
+<h3>Lab Communication Support</h3>
+<p>Assist communication between product engineers and certification laboratories.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-check-circle fa-2x"></i>
+<h3>Design Adjustment</h3>
+<p>Implement engineering improvements before official testing begins.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-rocket fa-2x"></i>
+<h3>Testing Readiness</h3>
+<p>Ensure prototypes are ready for certification testing.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>Prepare Your Prototype For Certification</h2>
+
+<p>Our engineering team helps identify design risks before compliance testing.</p>
+
+<a href="contact.html" class="btn primary">Contact Engineering Team</a>
+
+</section>
+
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
