@@ -1,103 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Industries | Hardware Engineering Expertise</title>
+<title>Industries We Serve | Prototype Engineering & Compliance Consulting</title>
 
-<meta name="description" content="Engineering support for consumer electronics, security cameras, IoT devices and battery powered products.">
+<meta name="description" content="Engineering consulting and prototype compliance assessment for security devices, smart home electronics, consumer electronics and industrial products.">
+
+<meta name="keywords" content="prototype engineering consulting, product compliance consulting, CE certification preparation, hardware prototype engineering">
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
 
 <header>
-
 <div class="logo">Engineering Studio</div>
-
 <nav>
-
 <a href="index.html">Home</a>
-
 <div class="dropdown">
 <a href="#">Services</a>
-
 <div class="dropdown-menu">
 <a href="rapid-prototyping.html">Rapid Prototyping</a>
 <a href="engineering-consulting.html">Engineering Consulting</a>
 </div>
-
 </div>
-
 <a href="industries.html">Industries</a>
 <a href="process.html">Process</a>
 <a href="case-study.html">Case Study</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 </header>
 
 <section class="hero">
-
+<div class="hero-left">
 <h1>Industries We Support</h1>
-
-<p>Engineering expertise across multiple hardware industries.</p>
-
+<p>Engineering consulting and prototype compliance support for global hardware manufacturers preparing products for certification and market entry.</p>
+<div class="hero-buttons">
+<a href="contact.html" class="btn primary">Discuss Your Product</a>
+</div>
+</div>
 </section>
 
-<section class="container">
+<section class="section">
+<h2 class="section-title">Key Industries</h2>
 
-<div class="card-grid">
+<div class="solution-grid">
 
-<div class="card">
-<i class="fas fa-tv"></i>
+<div class="solution-card">
+<i class="fas fa-video fa-2x"></i>
+<h3>Security & Surveillance</h3>
+<p>Prototype evaluation and compliance preparation for CCTV cameras, smart security devices and surveillance hardware.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-house fa-2x"></i>
+<h3>Smart Home Devices</h3>
+<p>Engineering support for IoT products including smart sensors, hubs, lighting systems and connected home devices.</p>
+</div>
+
+<div class="solution-card">
+<i class="fas fa-mobile-screen fa-2x"></i>
 <h3>Consumer Electronics</h3>
-<p>Portable devices and smart electronic products.</p>
+<p>Prototype development and structural analysis for consumer electronic products entering certification stage.</p>
 </div>
 
-<div class="card">
-<i class="fas fa-video"></i>
-<h3>Security Camera</h3>
-<p>Camera housing design and waterproof engineering.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-house"></i>
-<h3>Smart Home</h3>
-<p>Smart sensors, controllers and home automation devices.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-wifi"></i>
-<h3>IoT Devices</h3>
-<p>Embedded electronics and wireless communication devices.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-solar-panel"></i>
-<h3>Outdoor Solar Devices</h3>
-<p>Solar powered outdoor electronics and lighting.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-battery-full"></i>
-<h3>Battery Powered Devices</h3>
-<p>Portable power electronics and battery products.</p>
+<div class="solution-card">
+<i class="fas fa-microchip fa-2x"></i>
+<h3>IoT Hardware</h3>
+<p>Engineering analysis for connected hardware devices including PCB layout evaluation and EMC considerations.</p>
 </div>
 
 </div>
-
 </section>
 
-<footer>
-<p>© Engineering Studio</p>
-</footer>
+<section class="cta">
+<h2>Need Engineering Support For Your Product?</h2>
+<p>Our engineers help identify compliance risks before certification testing.</p>
+<a href="contact.html" class="btn primary">Contact Engineering Team</a>
+</section>
+
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
