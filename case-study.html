@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<div id="header"></div>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Engineering Case Studies | Prototype Compliance Projects</title>
-
-<meta name="description" content="Engineering consulting case studies showing how prototype compliance issues were solved before certification testing.">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-
-<body>
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
 
 <header>
 
