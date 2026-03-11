@@ -17,7 +17,7 @@
 <style>
 
 .contact-hero{
-padding:120px 0 80px;
+padding:160px 0 90px;
 background:#f7f8fa;
 }
 
@@ -30,8 +30,12 @@ padding:0 20px;
 .contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+gap:70px;
+align-items:start;
+}
+
+.contact-left{
+padding-top:20px;
 }
 
 .contact-left h1{
@@ -48,6 +52,7 @@ margin-bottom:30px;
 .contact-features{
 list-style:none;
 padding:0;
+margin-bottom:30px;
 }
 
 .contact-features li{
@@ -63,7 +68,7 @@ margin-right:10px;
 .engineering-stats{
 display:flex;
 gap:40px;
-margin-top:30px;
+margin-top:20px;
 }
 
 .engineering-stats div{
@@ -179,12 +184,12 @@ document.getElementById("header").innerHTML = data;
 <h1>Start Your Engineering Review</h1>
 
 <p>
-Our engineers help hardware startups and manufacturers identify structural and compliance risks before certification testing.
+Send us your product details and our engineers will identify potential engineering and compliance risks before certification testing.
 </p>
 
 <ul class="contact-features">
 
-<li><i class="fa-solid fa-check"></i> Rapid prototype engineering review</li>
+<li><i class="fa-solid fa-check"></i> Prototype engineering review</li>
 
 <li><i class="fa-solid fa-check"></i> Structural and thermal risk analysis</li>
 
@@ -202,7 +207,7 @@ Our engineers help hardware startups and manufacturers identify structural and c
 </div>
 
 <div>
-<strong>50+ Projects</strong>
+<strong>50+</strong>
 <span>Prototype Reviews</span>
 </div>
 
@@ -260,18 +265,16 @@ Submit Engineering Request
 </form>
 
 <div class="success-message" id="success-message">
-✔ Request received. Our engineers will contact you within 24 hours.
+✔ Request received. Our engineering team will contact you within 24 hours.
 </div>
 
 <div class="trust-block">
 
-🔒 Engineering confidentiality guaranteed  
+🔒 All product information treated confidentially  
 <br>
-
 📄 NDA available before project discussion  
 <br>
-
-⚡ Response within 24 hours  
+⚡ Engineering response within 24 hours  
 
 </div>
 
@@ -287,7 +290,7 @@ Submit Engineering Request
 
 <script>
 fetch("footer.html")
-.then(response => response.text())
+.then(res => res.text())
 .then(data => {
 document.getElementById("footer").innerHTML = data;
 });
@@ -296,7 +299,7 @@ document.getElementById("footer").innerHTML = data;
 
 <script>
 
-const scriptURL="https://script.google.com/macros/s/AKfycbzStFTEw1yF9iEijo1COLWXzjqsgN_2ZcuYzsDmjxNUn4jn31gv_E5VoYrgunPiCdo_5w/exec"
+const scriptURL="https://script.google.com/macros/s/AKfycbwpL3wRtVxSPmllcQMpO0k9V2Vrifr0_VvCwwawqpln4S6sQrU5HZ9CTbNNsvSxocWUTQ/exec"
 
 const form=document.getElementById("contact-form")
 
@@ -308,19 +311,19 @@ e.preventDefault()
 
 fetch(scriptURL,{
 method:"POST",
-mode:"no-cors",
 body:new FormData(form)
 })
-.then(()=>{
+.then(response=>response.text())
+.then(data=>{
 
 form.reset()
 
 success.style.display="block"
 
 })
-.catch(()=>{
+.catch(error=>{
 
-alert("Network error. Please contact us directly.")
+alert("Submission failed")
 
 })
 
