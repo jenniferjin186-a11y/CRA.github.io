@@ -21,6 +21,12 @@ padding:120px 0 80px;
 background:#f7f8fa;
 }
 
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
 .contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -52,6 +58,27 @@ font-size:16px;
 .contact-features i{
 color:#ff6a00;
 margin-right:10px;
+}
+
+.engineering-stats{
+display:flex;
+gap:40px;
+margin-top:30px;
+}
+
+.engineering-stats div{
+display:flex;
+flex-direction:column;
+}
+
+.engineering-stats strong{
+font-size:22px;
+color:#ff6a00;
+}
+
+.engineering-stats span{
+font-size:13px;
+color:#777;
 }
 
 .contact-card{
@@ -109,6 +136,13 @@ color:#0a7a34;
 font-weight:600;
 }
 
+.trust-block{
+margin-top:25px;
+font-size:14px;
+color:#666;
+line-height:1.8;
+}
+
 @media(max-width:900px){
 
 .contact-grid{
@@ -123,7 +157,7 @@ grid-template-columns:1fr;
 
 <body>
 
-  <!-- HEADER -->
+<!-- HEADER -->
 <div id="header"></div>
 
 <script>
@@ -134,29 +168,50 @@ document.getElementById("header").innerHTML = data;
 });
 </script>
 
+
 <section class="contact-hero">
 
 <div class="container contact-grid">
+
 
 <div class="contact-left">
 
 <h1>Start Your Engineering Review</h1>
 
 <p>
-Send us your product details and our engineering team will evaluate potential risks before prototyping or certification.
+Our engineers help hardware startups and manufacturers identify structural and compliance risks before certification testing.
 </p>
 
 <ul class="contact-features">
 
-<li><i class="fa-solid fa-check"></i> Rapid prototyping consultation</li>
+<li><i class="fa-solid fa-check"></i> Rapid prototype engineering review</li>
 
-<li><i class="fa-solid fa-check"></i> Structural design risk review</li>
+<li><i class="fa-solid fa-check"></i> Structural and thermal risk analysis</li>
 
-<li><i class="fa-solid fa-check"></i> Pre-compliance engineering check</li>
+<li><i class="fa-solid fa-check"></i> EMC & electrical safety pre-check</li>
 
-<li><i class="fa-solid fa-check"></i> Certification coordination support</li>
+<li><i class="fa-solid fa-check"></i> Certification preparation guidance</li>
 
 </ul>
+
+<div class="engineering-stats">
+
+<div>
+<strong>15+ Years</strong>
+<span>Engineering Experience</span>
+</div>
+
+<div>
+<strong>50+ Projects</strong>
+<span>Prototype Reviews</span>
+</div>
+
+<div>
+<strong>CE / FCC</strong>
+<span>Compliance Expertise</span>
+</div>
+
+</div>
 
 </div>
 
@@ -166,27 +221,19 @@ Send us your product details and our engineering team will evaluate potential ri
 <form id="contact-form">
 
 <div class="form-group">
-
 <input type="text" name="name" placeholder="Your Name" required>
-
 </div>
 
 <div class="form-group">
-
 <input type="text" name="company" placeholder="Company">
-
 </div>
 
 <div class="form-group">
-
 <input type="email" name="email" placeholder="Email Address" required>
-
 </div>
 
 <div class="form-group">
-
 <input type="text" name="country" placeholder="Country">
-
 </div>
 
 <div class="form-group">
@@ -203,22 +250,28 @@ Send us your product details and our engineering team will evaluate potential ri
 </div>
 
 <div class="form-group">
-
 <textarea name="message" placeholder="Tell us about your product"></textarea>
-
 </div>
 
 <button class="submit-btn" type="submit">
-
 Submit Engineering Request
-
 </button>
 
 </form>
 
 <div class="success-message" id="success-message">
-
 ✔ Request received. Our engineers will contact you within 24 hours.
+</div>
+
+<div class="trust-block">
+
+🔒 Engineering confidentiality guaranteed  
+<br>
+
+📄 NDA available before project discussion  
+<br>
+
+⚡ Response within 24 hours  
 
 </div>
 
@@ -229,6 +282,18 @@ Submit Engineering Request
 </section>
 
 
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+
 <script>
 
 const scriptURL="https://script.google.com/macros/s/AKfycbzStFTEw1yF9iEijo1COLWXzjqsgN_2ZcuYzsDmjxNUn4jn31gv_E5VoYrgunPiCdo_5w/exec"
@@ -237,29 +302,31 @@ const form=document.getElementById("contact-form")
 
 const success=document.getElementById("success-message")
 
-form.addEventListener("submit",e=>{
+form.addEventListener("submit",function(e){
 
 e.preventDefault()
 
 fetch(scriptURL,{
 method:"POST",
+mode:"no-cors",
 body:new FormData(form)
 })
-
-.then(res=>{
+.then(()=>{
 
 form.reset()
 
 success.style.display="block"
 
 })
+.catch(()=>{
 
-.catch(err=>alert("Submission failed"))
+alert("Network error. Please contact us directly.")
+
+})
 
 })
 
 </script>
 
 </body>
-
 </html>
