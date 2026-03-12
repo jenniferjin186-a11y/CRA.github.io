@@ -15,32 +15,16 @@
 </head>
 <body>
 
-<header>
-  <div class="logo">Your Company Name</div>
-<nav>
+<!-- HEADER -->
+<div id="header"></div>
 
-<a href="index.html">Home</a>
-
-<div class="dropdown">
-<a href="#solutions">Services</a>
-
-<div class="dropdown-menu">
-<a href="rapid-prototyping.html">Rapid Prototyping</a>
-<a href="engineering-consulting.html">Engineering Consulting</a>
-</div>
-
-</div>
-
-<a href="industries.html">Industries</a>
-
-<a href="#process">Process</a>
-
-<a href="case-study.html">Case Study</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-</header>
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
 
 <section class="hero">
   <div class="hero-left">
