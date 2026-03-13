@@ -44,7 +44,7 @@ position:relative;
 z-index:2;
 }
 .hero h1{font-size:56px;font-weight:700;margin-bottom:20px;line-height:1.2;}
-.hero p{max-width:650px;font-size:18px;margin-bottom:40px;color:#cbd5e1;}
+.hero p{max-width:650px;font-size:18px;margin-bottom:50px;color:#cbd5e1;}
 .hero-buttons .btn{background:#ff6b00;color:#fff;margin-right:20px;}
 .btn{padding:14px 32px;border-radius:50px;text-decoration:none;font-size:14px;transition:0.3s;}
 .btn.primary:hover{opacity:0.85;}
