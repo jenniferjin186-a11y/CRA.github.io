@@ -253,39 +253,15 @@ document.getElementById("header").innerHTML = data;
   <a href="contact.html" class="btn primary">Request Engineering Review</a>
 </section>
 
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h3>Your Company Name</h3>
-      <p>Engineering Risk Control for Regulated Consumer Electronics</p>
-    </div>
-    <div>
-      <h3>Solutions</h3>
-      <ul>
-        <li>Rapid Prototyping</li>
-        <li>Pre-Compliance Evaluation</li>
-        <li>Structural Risk Review</li>
-        <li>Certification Coordination</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Industries</h3>
-      <ul>
-        <li>Smart Home</li>
-        <li>Security Devices</li>
-        <li>Battery Products</li>
-        <li>Outdoor Electronics</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Email: info@yourcompany.com</p>
-      <p>Location: Europe / US</p>
-      <p>Confidential NDA Available</p>
-    </div>
-  </div>
-  <p class="footer-bottom">© 2026 Your Company Name. All rights reserved.</p>
-</footer>
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
 
 <script src="js/script.js"></script>
 </body>
