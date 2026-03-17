@@ -45,6 +45,17 @@ margin:30px 0;
 
 <body>
 
+<!-- HEADER -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
+  
 <!-- HERO -->
 
 <section class="hero" style="background-image:url('../images/prototype-fail-emc-testing.jpg')">
