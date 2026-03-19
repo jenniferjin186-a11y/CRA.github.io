@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>How to Prepare Hardware Products for CE Certification | CRA Engineering</title>
+<meta name="description" content="Learn how to prepare your hardware product for CE certification, including EMC, safety, and design considerations to avoid costly failures.">
+<meta name="keywords" content="CE certification, EMC testing, product compliance, hardware development, CE preparation">
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- HERO / BANNER -->
+<section class="hero" style="background-image:url('/images/ce-testing-lab.jpg')">
+    <div class="hero-left">
+        <h1>How to Prepare Hardware Products for CE Certification</h1>
+        <p>Reduce risks, avoid failures, and pass certification faster.</p>
+    </div>
+</section>
+
+<!-- ARTICLE -->
+<section class="section">
+<div class="container" style="max-width: 800px;">
+
+<p><strong>CE certification</strong> is mandatory for selling electronic products in Europe. Many products fail due to poor preparation, leading to delays and extra cost.</p>
+
+<p>In this guide, we walk through key steps to prepare your hardware for CE certification successfully.</p>
+
+<!-- IMAGE 1 -->
+<img src="/images/emc-test-setup.jpg" alt="EMC testing setup" style="width:100%; margin:20px 0; border-radius:8px;">
+<p style="text-align:center; font-size:12px; color:#666;">EMC pre-compliance testing setup in lab</p>
+
+<h2>1. Understand CE Certification Requirements</h2>
+<p>CE certification involves multiple directives: EMC, LVD (Low Voltage), and RED (Radio Equipment Directive, if applicable).</p>
+
+<h2>2. Design for EMC from the Beginning</h2>
+<p>Poor EMC design is the most common reason for failure.</p>
+
+<!-- IMAGE 2 -->
+<img src="/images/pcb-layout.jpg" alt="PCB layout EMI design" style="width:100%; margin:20px 0; border-radius:8px;">
+<p style="text-align:center; font-size:12px; color:#666;">PCB layout designed for EMI reduction</p>
+
+<ul>
+<li>Proper grounding and shielding</li>
+<li>Optimized PCB layout</li>
+<li>Filtering and decoupling</li>
+</ul>
+
+<h2>3. Perform Pre-Compliance Testing</h2>
+<p>Test early in-house to reduce risks and cost.</p>
+
+<!-- IMAGE 3 -->
+<img src="/images/pre-compliance-lab.jpg" alt="Pre-compliance testing" style="width:100%; margin:20px 0; border-radius:8px;">
+<p style="text-align:center; font-size:12px; color:#666;">Pre-compliance EMC test in lab</p>
+
+<h2>4. Verify Structural and Safety Design</h2>
+<ul>
+<li>Insulation distances</li>
+<li>Material flammability</li>
+<li>Enclosure protection</li>
+</ul>
+
+<h2>5. Prepare Documentation</h2>
+<ul>
+<li>Technical file</li>
+<li>Test reports</li>
+<li>Risk assessment</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Integrating EMC design, pre-compliance testing, and structural validation significantly improves CE certification success rate.</p>
+
+<!-- CTA -->
+<div style="margin-top:40px; padding:30px; background:#0f172a; color:#fff; border-radius:10px; text-align:center;">
+<h3>Need Help with CE Certification?</h3>
+<p>We support product design, EMC optimization, and certification preparation.</p>
+<a href="/contact.html" style="display:inline-block; margin-top:15px; padding:12px 24px; background:#22c55e; color:#fff; text-decoration:none; border-radius:6px;">Contact Us</a>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- LOAD COMPONENTS -->
+<script>
+fetch('/header.html')
+.then(res => res.text())
+.then(data => document.getElementById('header').innerHTML = data);
+
+fetch('/footer.html')
+.then(res => res.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>
