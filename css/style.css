@@ -538,3 +538,49 @@ font-weight:600;
 .cta-button:hover {
     background: #ea580c;
 }
+/* 文章排版优化 */
+.article-content {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 段落间距（关键） */
+.article-content p {
+    margin-bottom: 18px;
+}
+
+/* 标题间距 */
+.article-content h1 {
+    margin-bottom: 20px;
+}
+
+.article-content h2 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* 列表间距 */
+.article-content ul {
+    margin: 15px 0 20px 20px;
+}
+
+.article-content li {
+    margin-bottom: 8px;
+}
+
+/* 图片间距 */
+.article-content img {
+    margin: 25px 0;
+    border-radius: 8px;
+}
+
+/* 图片说明 */
+.article-content img + p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+}
