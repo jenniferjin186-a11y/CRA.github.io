@@ -64,7 +64,7 @@
             link.addEventListener('click', function(event) {
                 event.preventDefault();
                 const targetUrl = link.getAttribute('href');
-                window.location.href = targetUrl;  // Force jump to root directory
+                window.location.replace(targetUrl);  // Force reload and redirect
             });
         });
     </script>
