@@ -28,16 +28,16 @@
 
                 <!-- Blog Card 1 -->
                 <div class="blog-card">
-                    <h3><a href="/prototype-fail-emc-testing.html">Why Hardware Prototypes Fail EMC Testing</a></h3>
+                    <h3><a href="/prototype-fail-emc-testing.html" class="blog-link">Why Hardware Prototypes Fail EMC Testing</a></h3>
                     <p>Learn the most common reasons hardware prototypes fail EMC testing and how to identify electromagnetic risks early.</p>
-                    <a href="/prototype-fail-emc-testing.html">Read More →</a>
+                    <a href="/prototype-fail-emc-testing.html" class="blog-link">Read More →</a>
                 </div>
 
                 <!-- Blog Card 2 -->
                 <div class="blog-card">
-                    <h3><a href="/prototype-design-mistakes.html">7 Common Prototype Design Mistakes in Electronics</a></h3>
+                    <h3><a href="/prototype-design-mistakes.html" class="blog-link">7 Common Prototype Design Mistakes in Electronics</a></h3>
                     <p>Avoid common engineering mistakes that cause prototype redesign and certification delays.</p>
-                    <a href="/prototype-design-mistakes.html">Read More →</a>
+                    <a href="/prototype-design-mistakes.html" class="blog-link">Read More →</a>
                 </div>
 
             </div>
@@ -58,6 +58,15 @@
         fetch('/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
+
+        // Force absolute path for blog links
+        document.querySelectorAll('.blog-link').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetUrl = link.getAttribute('href');
+                window.location.href = targetUrl;  // Force jump to root directory
+            });
+        });
     </script>
 </body>
 </html>
