@@ -1,0 +1,45 @@
+name: Auto Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate sitemap
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+
+          for file in $(find . -type f -name "*.html" -not -path "./.github/*"); do
+            path=$(echo $file | sed 's|^\./||')
+
+            if [ "$path" = "index.html" ]; then
+              url="https://www.cra-eng.com/"
+            else
+              url="https://www.cra-eng.com/$path"
+            fi
+
+            echo "<url><loc>$url</loc></url>" >> sitemap.xml
+          done
+
+          echo '</urlset>' >> sitemap.xml
+
+      - name: Commit sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add sitemap.xml
+          git commit -m "auto: update sitemap" || echo "No changes"
+          git push
