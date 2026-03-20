@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Common EMI Problems in PCB Design | CRA Engineering</title>
+    <meta name="description" content="Discover the most common EMI issues in PCB design and how to avoid costly redesigns. Improve your product compliance success rate with expert insights.">
+    <meta name="keywords" content="EMI PCB design, EMC issues PCB, PCB layout EMI, electromagnetic interference PCB, hardware compliance design">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Hero Section -->
+<section class="blog-hero">
+    <img src="images/blog/emi-pcb-hero.jpg" alt="PCB EMI Design Issues">
+    <div class="hero-overlay">
+        <h1>Common EMI Problems in PCB Design</h1>
+        <p>Why most hardware projects fail EMC — and how to prevent it early</p>
+    </div>
+</section>
+
+<!-- Blog Content -->
+<section class="blog-container">
+
+    <p>
+        Electromagnetic interference (EMI) is one of the most common reasons hardware products fail compliance testing.
+        In our experience supporting global clients, more than 70% of EMC failures originate from poor PCB design decisions made early in development.
+    </p>
+
+    <p>
+        The problem is not testing — it's design. Once EMI issues appear in certification labs, fixing them becomes expensive, time-consuming, and sometimes structurally impossible.
+    </p>
+
+    <h2>1. Poor Grounding Design</h2>
+
+    <img src="images/blog/pcb-grounding.jpg" alt="PCB grounding issue">
+
+    <p>
+        One of the most critical yet frequently overlooked aspects is grounding. Improper ground plane segmentation or high impedance return paths can significantly increase radiated emissions.
+    </p>
+
+    <ul>
+        <li>Split ground planes without proper stitching</li>
+        <li>Long return current loops</li>
+        <li>Inconsistent reference planes for high-speed signals</li>
+    </ul>
+
+    <p>
+        A continuous and low-impedance ground plane is fundamental for EMI control.
+    </p>
+
+    <h2>2. High-Speed Signal Routing Issues</h2>
+
+    <img src="images/blog/high-speed-routing.jpg" alt="High speed PCB routing">
+
+    <p>
+        As signal frequencies increase, PCB traces behave like antennas. Poor routing practices can cause strong electromagnetic radiation.
+    </p>
+
+    <ul>
+        <li>Uncontrolled impedance traces</li>
+        <li>Sharp corners and stubs</li>
+        <li>Improper differential pair routing</li>
+    </ul>
+
+    <p>
+        Maintaining controlled impedance and minimizing discontinuities are key to reducing EMI.
+    </p>
+
+    <h2>3. Inadequate Decoupling and Power Integrity</h2>
+
+    <img src="images/blog/pcb-decoupling.jpg" alt="PCB decoupling capacitors">
+
+    <p>
+        Power integrity issues often translate directly into EMI problems. Without proper decoupling, noise propagates across the board and radiates outward.
+    </p>
+
+    <ul>
+        <li>Missing or poorly placed decoupling capacitors</li>
+        <li>Long power supply traces</li>
+        <li>Shared noisy power domains</li>
+    </ul>
+
+    <p>
+        Strategic capacitor placement close to IC pins is essential for noise suppression.
+    </p>
+
+    <h2>4. Lack of EMI Consideration in Early Design</h2>
+
+    <p>
+        Many teams treat EMI as a post-design issue. This is a fundamental mistake.
+    </p>
+
+    <p>
+        By the time a prototype reaches EMC testing, layout decisions are already locked in. Fixes at this stage often require:
+    </p>
+
+    <ul>
+        <li>PCB redesign</li>
+        <li>Shielding additions</li>
+        <li>Costly component changes</li>
+    </ul>
+
+    <p>
+        EMI must be addressed during schematic and layout stages — not after.
+    </p>
+
+    <h2>How to Avoid These Problems</h2>
+
+    <p>
+        The most effective approach is to integrate EMC thinking into the design process from day one.
+    </p>
+
+    <ul>
+        <li>Follow EMC-aware PCB layout guidelines</li>
+        <li>Conduct pre-compliance testing early</li>
+        <li>Work with experienced hardware design teams</li>
+    </ul>
+
+    <p>
+        Early-stage EMC evaluation can reduce certification risks by more than 50%.
+    </p>
+
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2>Reduce EMI Risks Before Testing</h2>
+        <p>We help you identify EMC issues at the design stage — saving time, cost, and redesign cycles.</p>
+        <a href="index.html#contact" class="cta-button">Get Expert Support</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Load Header & Footer -->
+<script>
+fetch('header.html')
+.then(res => res.text())
+.then(data => document.getElementById('header').innerHTML = data);
+
+fetch('footer.html')
+.then(res => res.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>
