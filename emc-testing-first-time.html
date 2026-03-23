@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>How to Pass EMC Testing the First Time | CRA Engineering</title>
+    <meta name="description" content="Learn how to pass EMC testing the first time with practical engineering strategies. Avoid costly failures and redesign delays.">
+    <meta name="keywords" content="EMC testing, pass EMC first time, EMC compliance, pre compliance testing, EMC design tips">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Hero Section -->
+<section class="blog-hero">
+    <img src="images/blog/emc-testing-hero.jpg" alt="EMC testing environment">
+    <div class="hero-overlay">
+        <h1>How to Pass EMC Testing the First Time</h1>
+        <p>Practical engineering strategies to avoid costly compliance failures</p>
+    </div>
+</section>
+
+<!-- Blog Content -->
+<section class="blog-container">
+
+    <p>
+        Failing EMC testing is one of the most common and expensive problems in hardware product development. 
+        Many companies only discover compliance issues after sending their products to certification labs — when it is already too late.
+    </p>
+
+    <p>
+        The good news is that most EMC failures are predictable and preventable with the right engineering approach.
+    </p>
+
+    <h2>1. Start EMC Considerations Early</h2>
+
+    <img src="images/blog/product-design-process.jpg" alt="Product design stage">
+
+    <p>
+        EMC is not something you “fix later.” It must be considered from the earliest design stages, including enclosure design, PCB layout, and component selection.
+    </p>
+
+    <p>
+        Late-stage fixes often require redesign, shielding, or costly compromises.
+    </p>
+
+    <h2>2. Optimize Enclosure Design</h2>
+
+    <img src="images/blog/product-enclosure.jpg" alt="Product enclosure design">
+
+    <p>
+        The product enclosure plays a critical role in EMC performance. Poor enclosure design can turn your product into an unintended antenna.
+    </p>
+
+    <ul>
+        <li>Ensure proper grounding of metal parts</li>
+        <li>Minimize gaps and seams</li>
+        <li>Use shielding where necessary</li>
+    </ul>
+
+    <p>
+        Mechanical design and EMC performance are closely linked.
+    </p>
+
+    <h2>3. Control Noise at the Source</h2>
+
+    <img src="images/blog/electronic-device-close.jpg" alt="Electronic device system">
+
+    <p>
+        The most effective way to pass EMC testing is to control noise before it spreads.
+    </p>
+
+    <ul>
+        <li>Reduce switching noise</li>
+        <li>Optimize power distribution</li>
+        <li>Use proper filtering techniques</li>
+    </ul>
+
+    <p>
+        Once noise propagates, it becomes much harder to manage.
+    </p>
+
+    <h2>4. Perform Pre-Compliance Testing</h2>
+
+    <p>
+        Pre-compliance testing allows you to identify EMC risks before formal certification.
+    </p>
+
+    <p>
+        This step can significantly increase your chances of passing EMC testing on the first attempt and reduce overall development cost.
+    </p>
+
+    <h2>5. Work with Experienced Engineering Teams</h2>
+
+    <p>
+        EMC compliance requires cross-disciplinary expertise — including electronics, mechanical design, and regulatory knowledge.
+    </p>
+
+    <p>
+        Experienced teams can identify risks early and provide practical solutions that align with both performance and cost requirements.
+    </p>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Passing EMC testing the first time is not luck — it is the result of proper design strategy and early risk management.
+    </p>
+
+    <p>
+        By integrating EMC thinking into your development process, you can avoid delays, reduce costs, and bring your product to market faster.
+    </p>
+
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2>Improve Your EMC Success Rate</h2>
+        <p>We help you identify and fix compliance risks before certification testing.</p>
+        <a href="index.html#contact" class="cta-button">Talk to Our Engineers</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Load Header & Footer -->
+<script>
+fetch('header.html')
+.then(res => res.text())
+.then(data => document.getElementById('header').innerHTML = data);
+
+fetch('footer.html')
+.then(res => res.text())
+.then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>
