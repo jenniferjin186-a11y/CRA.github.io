@@ -1,154 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO -->
-    <title>How to Pass EMC Testing the First Time | CRA Engineering</title>
-    <meta name="description" content="Learn how to pass EMC testing the first time by addressing design and compliance risks early.">
-    <meta name="keywords" content="EMC testing, EMC compliance, pre compliance testing, EMC design">
-    <meta name="robots" content="index, follow">
+<title>How to Pass EMC Testing the First Time | Engineering Insights</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<meta name="description" content="Learn how to pass EMC testing the first time by addressing design, enclosure, and system-level risks early.">
+
+<meta name="keywords" content="EMC testing, EMC compliance, pre compliance testing, EMC design, product compliance">
+
+<meta name="robots" content="index, follow">
+
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6c0c9c0c9c.js" crossorigin="anonymous"></script>
+
+<style>
+.blog-container{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+line-height:1.7;
+}
+.blog-container h2{
+margin-top:50px;
+}
+.blog-image{
+width:100%;
+border-radius:10px;
+margin:30px 0;
+}
+</style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <div id="header"></div>
+<script>
+fetch("header.html").then(res => res.text()).then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
 
 <!-- HERO -->
-<section class="blog-hero">
-    <img src="images/blog/emc-testing-hero.jpg" alt="EMC testing">
-    <div class="hero-overlay">
-        <h1>How to Pass EMC Testing the First Time</h1>
-        <p>Avoid delays and redesign by solving compliance issues early</p>
-    </div>
+<section class="hero" style="background-image:url('images/blog/emc-testing-hero.jpg')">
+<img src="images/blog/emc-testing-hero.jpg"
+alt="EMC testing environment"
+style="display:none;">
+<div class="hero-left">
+<h1>How to Pass EMC Testing the First Time</h1>
+<p>Avoid delays and redesign by solving compliance issues early</p>
+</div>
 </section>
 
-<!-- CONTENT -->
+<!-- BLOG CONTENT -->
 <section class="blog-container">
 
-    <!-- Intro -->
-    <p>
-        Failing EMC testing is one of the most common reasons hardware products are delayed before market launch.
-        In most cases, the problem is not the test itself — but design decisions made earlier in development.
-    </p>
+<p>
+Failing EMC testing is one of the most common reasons hardware products are delayed before market launch. In most cases, the issue is not the test itself — but design decisions made earlier in development.
+</p>
 
-    <p>
-        With the right engineering approach, most EMC issues can be predicted and avoided.
-        The key is to address compliance risks before the product reaches the certification stage.
-    </p>
+<p>
+With the right engineering approach, most EMC failures can be predicted and avoided. The key is to address compliance risks before the product reaches the certification stage.
+</p>
 
-    <!-- Section 1 -->
-    <h2>1. Start EMC Considerations Early</h2>
+<h2>1. Start EMC Considerations Early</h2>
 
-    <img src="images/blog/product-design-process.jpg" alt="Product design process">
+<p>
+EMC should be considered from the earliest stages of product development, including system architecture and enclosure design.
+</p>
 
-    <p>
-        EMC should be considered from the earliest stages of product development, including system architecture and enclosure design.
-    </p>
+<img src="images/blog/product-design-process.jpg" 
+alt="Product design process"
+class="blog-image">
 
-    <ul>
-        <li>Define EMC strategy during concept phase</li>
-        <li>Avoid structural limitations later</li>
-        <li>Align mechanical and electronic design early</li>
-    </ul>
+<p>
+Early decisions define the foundation of compliance performance and are difficult to correct later.
+</p>
 
-    <p>
-        Early-stage decisions have the greatest impact on compliance success.
-    </p>
+<h2>2. Optimize Enclosure Design</h2>
 
-    <!-- Section 2 -->
-    <h2>2. Optimize Enclosure Design</h2>
+<p>
+The product enclosure plays a critical role in EMC performance. Poor structural design can create unintended emission paths and reduce shielding effectiveness.
+</p>
 
-    <img src="images/blog/product-enclosure.jpg" alt="Product enclosure design">
+<img src="images/blog/product-enclosure.jpg"
+alt="Product enclosure design"
+class="blog-image">
 
-    <p>
-        The enclosure plays a critical role in EMC performance. Poor mechanical design can lead to unexpected emission issues.
-    </p>
+<p>
+Reducing gaps, improving grounding, and applying shielding materials are key strategies to control emissions.
+</p>
 
-    <ul>
-        <li>Reduce gaps and openings</li>
-        <li>Ensure proper grounding of metal parts</li>
-        <li>Apply shielding where necessary</li>
-    </ul>
+<h2>3. Control Noise at System Level</h2>
 
-    <p>
-        A well-designed enclosure helps contain electromagnetic emissions.
-    </p>
+<p>
+Many EMC issues originate from system-level noise rather than individual components. Controlling noise at the source is essential.
+</p>
 
-    <!-- Section 3 -->
-    <h2>3. Control Noise at System Level</h2>
+<img src="images/blog/electronic-device-close.jpg"
+alt="Electronic system"
+class="blog-image">
 
-    <img src="images/blog/electronic-device-close.jpg" alt="Electronic system">
+<p>
+Optimizing power systems, grounding paths, and module interactions helps prevent interference from spreading across the product.
+</p>
 
-    <p>
-        Many EMC issues originate from system-level noise rather than individual components.
-        Controlling noise at the source is essential.
-    </p>
+<h2>4. Perform Pre-Compliance Testing</h2>
 
-    <ul>
-        <li>Reduce switching noise</li>
-        <li>Optimize grounding paths</li>
-        <li>Prevent interference between modules</li>
-    </ul>
+<p>
+Pre-compliance testing allows you to identify potential EMC risks before formal certification. It is one of the most effective ways to improve first-pass success rates.
+</p>
 
-    <p>
-        Once noise spreads across the system, it becomes difficult to control.
-    </p>
+<img src="images/blog/pre-compliance-device-hero.jpg"
+alt="Pre compliance testing"
+class="blog-image">
 
-    <!-- Section 4 -->
-    <h2>4. Perform Pre-Compliance Testing</h2>
+<p>
+Early testing reduces uncertainty and avoids costly redesign cycles.
+</p>
 
-    <img src="images/blog/pre-compliance-device-hero.jpg" alt="Pre compliance testing">
+<h2>Conclusion</h2>
 
-    <p>
-        Pre-compliance testing allows you to identify potential EMC risks before formal certification.
-    </p>
+<p>
+Passing EMC testing the first time is not accidental — it is the result of structured engineering decisions made throughout the development process.
+</p>
 
-    <ul>
-        <li>Detect emission issues early</li>
-        <li>Validate design performance</li>
-        <li>Reduce risk of failure</li>
-    </ul>
-
-    <p>
-        This step significantly improves the chances of passing EMC testing on the first attempt.
-    </p>
-
-    <!-- Conclusion -->
-    <h2>Conclusion</h2>
-
-    <p>
-        Passing EMC testing the first time is not accidental — it is the result of proper design strategy and early risk control.
-    </p>
-
-    <p>
-        By integrating EMC considerations into the design and development process, you can avoid costly redesigns and accelerate product launch.
-    </p>
+<p>
+By integrating compliance thinking into design, structure, and testing stages, companies can reduce delays, lower costs, and accelerate time to market.
+</p>
 
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
-    <div class="cta-container">
-        <h2>Improve Your EMC Success Rate</h2>
-        <p>We help identify compliance risks early and reduce certification failures.</p>
-        <a href="index.html#contact" class="cta-button">Get Expert Support</a>
-    </div>
+<section class="cta">
+<h2>Improve Your EMC Success Rate</h2>
+<p>We help identify compliance risks early and reduce certification failures.</p>
+<a href="contact.html" class="btn primary">Get Expert Support</a>
 </section>
 
+<!-- FOOTER -->
 <div id="footer"></div>
-
 <script>
-fetch('header.html')
-.then(res => res.text())
-.then(data => document.getElementById('header').innerHTML = data);
-
-fetch('footer.html')
-.then(res => res.text())
-.then(data => document.getElementById('footer').innerHTML = data);
+fetch("footer.html").then(res => res.text()).then(data => {
+document.getElementById("footer").innerHTML = data;
+});
 </script>
 
 </body>
