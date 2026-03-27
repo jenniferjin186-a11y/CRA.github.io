@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Common EMI Problems in PCB Design | Engineering Insights</title>
+
+<meta name="description" content="Discover common EMI problems in PCB design and learn how to reduce electromagnetic interference in electronic products.">
+
+<meta name="keywords" content="EMI problems, PCB design, EMC issues, electromagnetic interference, product compliance">
+
+<meta name="robots" content="index, follow">
+
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6c0c9c0c9c.js" crossorigin="anonymous"></script>
+
+<style>
+.blog-container{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+line-height:1.7;
+}
+.blog-container h2{
+margin-top:50px;
+}
+.blog-image{
+width:100%;
+border-radius:10px;
+margin:30px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+<script>
+fetch("header.html").then(res => res.text()).then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
+
+<!-- HERO -->
+<section class="hero" style="background-image:url('images/blog/emi-pcb-hero.jpg')">
+<img src="images/blog/emi-pcb-hero.jpg"
+alt="EMI issues in electronic products"
+style="display:none;">
+<div class="hero-left">
+<h1>Common EMI Problems in PCB Design</h1>
+<p>Identify and reduce electromagnetic interference at the design stage</p>
+</div>
+</section>
+
+<!-- BLOG CONTENT -->
+<section class="blog-container">
+
+<p>
+Electromagnetic interference (EMI) is one of the most common challenges in electronic product development. Many issues originate at the PCB design stage but impact the entire system.
+</p>
+
+<p>
+Poor EMI control can lead to compliance failures, unstable performance, and costly redesigns. Understanding the root causes is essential for improving product reliability.
+</p>
+
+<h2>1. Poor Grounding Design</h2>
+
+<p>
+Improper grounding is one of the leading causes of EMI issues. Discontinuous ground planes and poor return paths increase noise and radiation.
+</p>
+
+<img src="images/blog/system-grounding.jpg" 
+alt="Grounding concept in electronics"
+class="blog-image">
+
+<p>
+Grounding problems are also a major reason <a href="why-hardware-prototypes-fail-emc-testing.html">hardware prototypes fail EMC testing</a>.
+</p>
+
+<h2>2. High-Speed Signal Routing Issues</h2>
+
+<p>
+High-speed signals generate electromagnetic emissions if routing is not optimized. Long traces and improper layout can act as antennas.
+</p>
+
+<img src="images/blog/high-speed-signal.jpg"
+alt="High speed signal transmission"
+class="blog-image">
+
+<p>
+Controlling trace length and impedance is critical for reducing interference.
+</p>
+
+<h2>3. Power Supply Noise</h2>
+
+<p>
+Switching power supplies are a significant source of EMI. Poor filtering and layout can spread noise across the entire system.
+</p>
+
+<img src="images/blog/power-supply-noise.jpg"
+alt="Power system noise"
+class="blog-image">
+
+<p>
+Effective decoupling and filtering are essential to maintain system stability.
+</p>
+
+<h2>4. Inadequate Shielding and Isolation</h2>
+
+<p>
+Lack of proper shielding allows noise to escape and interfere with other components or external devices.
+</p>
+
+<img src="images/blog/product-enclosure.jpg"
+alt="Product enclosure shielding"
+class="blog-image">
+
+<p>
+Mechanical design plays a key role in EMI control. Learn more about <a href="structural-design-risks-in-smart-devices.html">structural design risks in smart devices</a>.
+</p>
+
+<h2>5. Poor Component Placement</h2>
+
+<p>
+Component placement affects signal integrity and noise coupling. Poor layout increases interference between circuits.
+</p>
+
+<img src="images/blog/system-layout.jpg"
+alt="System layout design"
+class="blog-image">
+
+<p>
+These design mistakes are common in early development stages. See <a href="prototype-design-mistakes.html">common prototype design mistakes</a>.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+EMI problems in PCB design are not isolated issues — they affect the entire product system and compliance performance.
+</p>
+
+<p>
+By improving grounding, routing, and system-level design, companies can reduce interference risks and improve certification success rates.
+</p>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Reduce EMI Risks in Your Product Design</h2>
+<p>We help identify and solve EMI issues early to improve compliance success.</p>
+<a href="contact.html" class="btn primary">Get Engineering Support</a>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+<script>
+fetch("footer.html").then(res => res.text()).then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>
