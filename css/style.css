@@ -45,7 +45,7 @@ z-index:2;
 }
 .hero h1{font-size:56px;font-weight:700;margin-bottom:20px;line-height:1.2;}
 .hero p{max-width:650px;font-size:18px;margin-bottom:50px;color:#cbd5e1;}
-.hero-buttons .btn{background:#ff6b00;color:#fff;margin-right:20px;}
+.hero-buttons .btn{background:#1F3A5F;color:#fff;margin-right:20px;}
 .btn{padding:14px 32px;border-radius:50px;text-decoration:none;font-size:14px;transition:0.3s;}
 .btn.primary:hover{opacity:0.85;}
 .stats{display:flex;justify-content:center;gap:120px;padding:100px 8%;background:#fff;text-align:center;}
@@ -75,11 +75,11 @@ z-index:2;
 .industries{padding:120px 8%;}
 .industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;text-align:center;}
 .industry i{font-size:40px;margin-bottom:20px;color:#0f172a;transition:0.3s;}
-.industry:hover i{color:#ff6b00;transform:scale(1.2);}
+.industry:hover i{color:#1F3A5F;transform:scale(1.2);}
 .cta{padding:140px 8%;text-align:center;background:#111827;color:#fff;}
 .cta h2{font-size:40px;margin-bottom:20px;}
 .cta p{margin-bottom:40px;}
-.cta .btn.primary{background:#ff6b00;color:#fff;}
+.cta .btn.primary{background:#1F3A5F;color:#fff;}
 footer{background:#0f172a;color:#cbd5e1;padding:80px 8%;}
 .footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-bottom:40px;}
 .footer-grid h3{font-size:16px;margin-bottom:15px;}
@@ -130,7 +130,7 @@ margin-top:60px;
 .timeline-number{
 font-size:28px;
 font-weight:700;
-color:#ff6b00;
+color:#1F3A5F;
 margin-bottom:10px;
 }
 
@@ -164,7 +164,7 @@ background:#fff;
 padding:45px;
 border-radius:16px;
 box-shadow:0 12px 30px rgba(0,0,0,0.08);
-border-top:4px solid #ff6b00;
+border-top:4px solid #1F3A5F;
 transition:0.3s;
 }
 
@@ -174,7 +174,7 @@ transform:translateY(-8px);
 
 .solution-icon{
 font-size:30px;
-color:#ff6b00;
+color:#1F3A5F;
 margin-bottom:20px;
 }
 
@@ -203,7 +203,7 @@ position:relative;
 width:60px;
 height:60px;
 border-radius:50%;
-background:#ff6b00;
+background:#1F3A5F;
 color:#fff;
 display:flex;
 align-items:center;
@@ -231,7 +231,7 @@ margin-top:60px;
 .case-pro-card{
 background:#fff;
 padding:45px;
-border-left:4px solid #ff6b00;
+border-left:4px solid #1F3A5F;
 border-radius:12px;
 box-shadow:0 12px 30px rgba(0,0,0,0.08);
 }
@@ -243,7 +243,7 @@ margin-bottom:20px;
 .case-label{
 font-weight:600;
 margin-top:15px;
-color:#ff6b00;
+color:#1F3A5F;
 }
 /* dropdown menu */
 
@@ -335,7 +335,7 @@ text-align:left;
 
 .card i{
 font-size:34px;
-color:#ff6b00;
+color:#1F3A5F;
 margin-bottom:15px;
 }
 
